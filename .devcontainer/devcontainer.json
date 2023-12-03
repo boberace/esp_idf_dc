@@ -11,7 +11,8 @@
 	 */
 	"workspaceFolder": "${localWorkspaceFolder}",
 	"mounts": [
-		"source=extensionCache,target=/root/.vscode-server/extensions,type=volume"
+		"source=extensionCache,target=/root/.vscode-server/extensions,type=volume",
+		"source=${localWorkspaceFolder}/.devcontainer/.bash_aliases,target=/home/esp/.bash_aliases,type=bind" 
 	],
 	"customizations": {
 		"vscode": {
@@ -43,5 +44,6 @@
 			],
 		}
 	},
-	"runArgs": ["--privileged"]
+	"runArgs": ["--privileged"],
+	"postCreateCommand": "sudo service docker start"
 }
