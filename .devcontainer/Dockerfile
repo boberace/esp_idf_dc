@@ -48,6 +48,9 @@ RUN if getent group docker > /dev/null 2>&1; then \
 
 RUN apt-get update && apt-get upgrade -y
 
+# Symlink docker socket
+RUN ln -s "/var/run/docker-host.sock" "/var/run/docker.sock"
+
 RUN update-alternatives --install /usr/local/bin/usbip usbip `ls /usr/lib/linux-tools/*/usbip | tail -n1` 20
 
 # QEMU

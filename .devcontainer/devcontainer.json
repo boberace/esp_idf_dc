@@ -14,6 +14,7 @@
 		"source=extensionCache,target=/root/.vscode-server/extensions,type=volume",
 		"source=${localWorkspaceFolder}/.devcontainer/.bash_aliases,target=/home/esp/.bash_aliases,type=bind" 
 	],
+	"forwardPorts": [8888],
 	"customizations": {
 		"vscode": {
 			"settings": {
