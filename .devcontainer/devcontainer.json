@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.183.0/containers/ubuntu
 {
-	"name": "ESP-IDF 5.0",
+	"name": "ESP-IDF 5.2.1",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -21,30 +21,20 @@
 				"terminal.integrated.defaultProfile.linux": "bash",
 				"idf.espIdfPath": "/opt/esp/idf",
 				"idf.customExtraPaths": "",
-				"idf.pythonBinPath": "/opt/esp/python_env/idf5.1_py3.8_env/bin/python",
+				"idf.pythonBinPath": "/opt/esp/python_env/idf5.0_py3.8_env/bin/python",
 				"idf.toolsPath": "/opt/esp",
 				"idf.gitPath": "/usr/bin/git"
 			},
 			"extensions": [
 				"ms-vscode.cpptools",
-				"espressif.esp-idf-extension"
+				"espressif.esp-idf-extension",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
 			],
 		},
-		"codespaces": {
-			"settings": {
-				"terminal.integrated.defaultProfile.linux": "bash",
-				"idf.espIdfPath": "/opt/esp/idf",
-				"idf.customExtraPaths": "",
-				"idf.pythonBinPath": "/opt/esp/python_env/idf5.1_py3.8_env/bin/python",
-				"idf.toolsPath": "/opt/esp",
-				"idf.gitPath": "/usr/bin/git"
-			},
-			"extensions": [
-				"ms-vscode.cpptools",
-				"espressif.esp-idf-extension"
-			],
-		}
 	},
-	"runArgs": ["--privileged"],
-	"postCreateCommand": "sudo service docker start"
+	"runArgs": [
+				"--privileged"
+				]
+	// "postCreateCommand": "sudo service docker start"
 }
