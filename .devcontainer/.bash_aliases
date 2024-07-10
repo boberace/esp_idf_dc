@@ -1,3 +1,5 @@
+export LC_ALL=C
+. /opt/esp/idf/export.sh
 
 alias sba="source ~/.bash_aliases"
 
