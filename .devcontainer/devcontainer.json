@@ -26,16 +26,16 @@
 	// },
 	/* Machine specific settings that should be copied into the container
 	 */
-	"settings": {
-	  "terminal.integrated.defaultProfile.linux": "bash",
-	  "idf.espIdfPath": "/opt/esp/idf",
-	  "idf.customExtraPaths": "",
-	  "idf.pythonBinPath": "/opt/esp/python_env/idf5.4_py3.12_env/bin/python",
-	  "idf.toolsPath": "/opt/esp",
-	  "idf.gitPath": "/usr/bin/git"
-	},
+	// "settings": {
+	//   "terminal.integrated.defaultProfile.linux": "bash",
+	//   "idf.espIdfPath": "/opt/esp/idf",
+	//   "idf.customExtraPaths": "",
+	//   "idf.pythonBinPath": "/opt/esp/python_env/idf5.4_py3.12_env/bin/python",
+	//   "idf.toolsPath": "/opt/esp",
+	//   "idf.gitPath": "/usr/bin/git"
+	// },
 	/* An array of extensions that should be installed into the container. */
-	"extensions": ["espressif.esp-idf-extension"],
+	// "extensions": ["espressif.esp-idf-extension"],
 	/* start the container with privileged mode, else the devices cannot be accessed on the docker image.
 	 */
 	"runArgs": ["--privileged"]
